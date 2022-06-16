@@ -9,5 +9,10 @@ pipeline {
                 bat 'npm install'
             }
         }
+        stage('deploy second file'){
+            steps{
+                bat 'npm run start:example2'
+            }
+        }
     }
 }
